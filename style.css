@@ -77,14 +77,14 @@ body {
     box-shadow: 0 0 10px #ff69b4;
   }
   
-  #agentText {
-    font-size: 14px;
-    margin-top: 5px;
-    background: rgba(255, 105, 180, 0.15);
-    padding: 5px 10px;
-    border-radius: 8px;
-    color: #ffccff;
+    #agentText {
+    font-size: 12px;
+    min-width: 140px;
+    max-width: 90vw;
+    width: auto;
+    box-sizing: border-box;
   }
+  
   
   /* Progress Map */
   #progressMap {
