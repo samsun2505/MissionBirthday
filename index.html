@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Secret Mission</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" loop >
+    <source src="assets/A Thousand Years-[AudioTrimmer.com].mp3" type="audio/mpeg">
+  </audio>
+  <audio id="khwab-music" style="display:none;">
+    <source src="assets/128-Dekha Ek Khwab With Dialogue By Amitabh - Silsila 128 Kbps.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Feedback Animation -->
+  <div id="feedback">✅</div>
+
+  <!-- Agent Chiuu Avatar -->
+  <div id="agentChiuu">
+    <img src="assets/agent-chiuu.png" alt="Agent Chiuu"/>
+    <p id="agentText">Welcome, Agent Chiuu is ready for the mission! 🕵️‍♀️</p>
+  </div>
+
+  <!-- Mission Progress Map -->
+  <div id="progressMap">
+    <div class="node" id="node1">1</div>
+    <div class="node" id="node2">2</div>
+    <div class="node" id="node3">3</div>
+    <div class="node" id="node4">4</div>
+  </div>
+
+  <!-- Welcome Section -->
+  <section class="section visible" id="welcome">
+    <h1>Welcome to The Secret Mission</h1>
+    <p>Are you ready, Agent Chiuu?</p>
+    <button class="btn" id="startBtn">Start the Mission</button>
+  </section>
+
+  <!-- Missions Placeholder -->
+  <section class="section" id="mission1"></section>
+  <section class="section" id="mission2"></section>
+  <section class="section" id="mission3"></section>
+  <section class="section" id="mission4"></section>
+
+  <!-- Final Section -->
+  <section class="section" id="congrats">
+    <h2>Mission Accomplished! 🎉</h2>
+    <p>To unlock the surprise, enter the secret code, password is something after 143</p>
+    <input type="text" id="secretCode" placeholder="Enter Secret Code"/>
+    <button class="btn" id="unlockBtn">Unlock</button>
+    <p id="codeMessage"></p>
+  </section>
+
+  <!-- Surprise Section -->
+  <section class="section" id="finalReveal">
+    <h2>Your Final Surprise ❤️</h2>
+    <video controls>
+      <source src="assets/final.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
