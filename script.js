@@ -22,9 +22,9 @@ const answers = [
       "14 feb 2024"
     ],
     [
-      "tujh mein rab dikhta hai",
+      "chal shaky shaky",
       "dekha ek khwab",
-      "perfect"
+      "Ye ratein ye mousam"
     ]
   ];
   const wrongMessages = [
